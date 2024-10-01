@@ -4,8 +4,10 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -52,9 +54,15 @@ public class MainActivity extends AppCompatActivity {
             }else{
                 result = input*2.2;
             }
+            LinearLayout linearLayout = findViewById(R.id.linearLayout);
+            TextView resultTxtView = new TextView(MainActivity.this);
 
+            resultTxtView.setText(String.valueOf(result));
+            resultTxtView.setTextSize(34);
+            resultTxtView.setTextColor(getResources().getColor(R.color.sky_blue,getTheme()));
+            linearLayout.addView(resultTxtView);
 
-            Toast.makeText(this, "GENERATED RESULT: "+result, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "GENERATED RESULT!", Toast.LENGTH_LONG).show();
 
         } else{
             Toast.makeText(this, "Input is Wrong", Toast.LENGTH_LONG).show();
