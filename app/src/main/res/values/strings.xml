@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="con_pounds_to_kilo">Convert pounds to kilogram</string>
+    <string name="con_kil_to_pounds">Convert kilogram to pounds </string>
+    <string name="hint">enter your data</string>
+    <string name="con_patient_weight">Convert Patient Weight</string>
+    <string name="button_text">Show Result</string>
+
+</resources>
